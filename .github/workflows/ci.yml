@@ -37,11 +37,11 @@ jobs:
           key: ${{ matrix.os }}-build
           restore-keys: ${{ matrix.os }}-build
 
-      - name: Setup Python ${{ matrix.python }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: "${{ matrix.python }}"
-          cache: "pip" # cache pip dependencies
+      # - name: Setup Python ${{ matrix.python }}
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: "${{ matrix.python }}"
+      #     cache: "pip" # cache pip dependencies
 
       # - name: Upgrade Pip and Install wheel
       #   run: |
