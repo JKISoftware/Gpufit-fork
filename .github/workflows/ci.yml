@@ -6,7 +6,10 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted, cuda, gpu, Windows, X64
+    runs-on:
+      - self-hosted
+      - gpu
+      - Windows
     strategy:
       fail-fast: true
       matrix:
